@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Registro de Datos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+  <section>
+    <header>
+      <h2>Registro de Usuario</h2>
+      <p>Completa la información solicitada</p>
+    </header>
+
+    <form>
+      <div>
+        <label for="fullName">Nombre completo *</label>
+        <input type="text" id="fullName" placeholder="Ej: Juan Pérez" required>
+      </div>
+
+      <div>
+        <label for="docType">Tipo de documento *</label>
+        <select id="docType" required>
+          <option value="" disabled selected>Selecciona</option>
+          <option value="dni">DNI</option>
+          <option value="pass">Pasaporte</option>
+          <option value="ce">Cédula extranjera</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="docNumber">Número de documento *</label>
+        <input type="text" id="docNumber" placeholder="Documento" required>
+      </div>
+
+      <div>
+        <label for="birthDate">Fecha de nacimiento *</label>
+        <input type="date" id="birthDate" required>
+      </div>
+
+      <div>
+        <label for="phone">Teléfono *</label>
+        <input type="tel" id="phone" placeholder="+57 300 000 0000" required>
+      </div>
+
+      <div>
+        <input type="checkbox" id="terms" required>
+        <label for="terms">
+          Acepto los términos y condiciones
+        </label>
+      </div>
+
+      <div>
+        <button type="submit">Guardar datos</button>
+      </div>
+    </form>
+
+  </section>
+
+</body>
+</html>
